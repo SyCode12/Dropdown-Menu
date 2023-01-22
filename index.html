@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dropdown upon clicking -->
+    <div class="container">
+        <div class="top">
+            <h1>Frontend</h1>
+            <div class="caret"></div>
+        </div>
+        <div class="list">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Dropdown upon hovering -->
+    <div class="new">
+        <li class="down">
+            <a href="#">Frontend </a>
+            <div class="class">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+            </div>
+        </li>
+    </div>
+    <script>
+        const drop = document.querySelector('.top');
+        const lists = document.querySelector('.list');
+        drop.addEventListener('click',()=>{
+            drop.classList.toggle('active')
+            lists.classList.toggle('active')
+        });
+    </script>
+</body>
+</html>

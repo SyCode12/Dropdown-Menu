@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:linen;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.container{
+    margin:300px auto;
+    width:250px;
+    height:200px;
+    background-color: transparent;
+}
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:2px 5px;
+    color:whitesmoke;
+}
+.top{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.849);
+    border-radius:4px;
+    transition: all .2s;
+}
+.top.active .caret{
+    transform:rotate(180deg)
+}
+.caret{
+    width:0;
+    height:0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid white;
+    margin-right:10px;
+    transition: all .3s;
+}
+.list{
+    margin-top:5px;
+    border-radius:2px;
+    background-color: rgba(51, 46, 46, 0.849);
+    width:250px;
+    height:0px;
+    opacity:0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.789);
+    transition: all .3s;
+}
+.list.active{
+    height:86px;
+    opacity:1;
+}
+.list ul li{
+    list-style-type: none;
+    color:white;
+    padding:5px 5px;
+}
+.list ul li:hover{
+    background-color: white;
+    color:black
+}
+
+/*Second one*/
+.new{
+    margin:300px auto;
+    width:250px;
+    height:200px;
+}
+.down{
+    background-color: rgba(0, 0, 0, 0.849);
+    border-radius:4px;
+    transition: all .3s;
+}
+.down:hover{
+    transition: all .3s;
+}
+.down:hover .class{
+    visibility: visible;
+    height:86px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size:35px;
+    padding:10px 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.class{
+    position:absolute;
+    margin-top:5px;
+    border-radius:2px;
+    background-color: rgba(51, 46, 46, 0.849);
+    width:250px;
+    height:0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.789);
+    visibility: hidden;
+    transition: all .3s;
+}
+li{
+    list-style-type: none; 
+}
+.class ul li{
+    color:white;
+    padding:5px 5px;
+}
+.class ul  li:hover{
+    background-color: white;
+    color:black
+}
